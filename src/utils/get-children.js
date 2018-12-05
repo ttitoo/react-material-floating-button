@@ -11,7 +11,7 @@ function getChildren(children){
   };
 
   Children.forEach(children, function(child){
-    if(child.type === MainButton || child.props.category === 'main' || child.type.displayName === 'MainButton'){
+    if(child.type === MainButton || child.type.displayName === 'MainButton'){
       buttons.main = child;
       return;
     }
