@@ -35,7 +35,8 @@ MainButton.defaultProps = {
   onClick: function(){},
   iconResting: '',
   iconActive: '',
-  label: null
+  label: null,
+  category: 'main'
 };
 
 module.exports = MainButton;
