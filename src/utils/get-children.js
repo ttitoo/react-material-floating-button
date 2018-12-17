@@ -1,6 +1,7 @@
 'use strict';
 
 var Children = require('react').Children;
+var path = require('ramda').path;
 
 var MainButton = require('../main-button');
 
@@ -11,7 +12,7 @@ function getChildren(children){
   };
 
   Children.forEach(children, function(child){
-    if(child.type === MainButton || child.type.displayName === 'MainButton'){
+    if(path(['type'], child) === MainButton || path(['type', 'displayName'], child) === 'MainButton'){
       buttons.main = child;
       return;
     }

@@ -44,6 +44,7 @@
     "grunt-usemin": "^3.0.0",
     "gulp": "^3.8.11",
     "gulp-babel": "^4.0.0",
+    "ramda": "^0.26.1",
     "reactify": "^1.0.0"
   },
   "keywords": [
